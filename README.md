@@ -1,3 +1,6 @@
-# ToDo API For Server
+# ToDo API
 
-## Rest endpoints
+## REST endpoints
+* List: Get /todos
+* Create: POST /todos
+* Update: PUT /todos
