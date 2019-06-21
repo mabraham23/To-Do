@@ -5,6 +5,17 @@ const uuid = require( "uuid" );
 var server = express( );
 var port = process.env.PORT || 3000;
 
+//Data
+var data = require( "./data.js" );
+
+//Endpoints
+server.get( "/todos", function (req, res) {
+    var response = {
+        todos: data.todos
+    };
+    res.json( response );
+});
+
 //Middleware
 server.use( cors( ) );
 server.use( express.json( ) );
